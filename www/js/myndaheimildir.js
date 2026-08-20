@@ -44,24 +44,26 @@ const _handleShowPreview = (e) => {
 const _handleHidePreview = (e) => {
   for (const tooltip of e.currentTarget.querySelectorAll('[role="tooltip"]')) {
     tooltip.setAttribute("aria-expanded", "false");
-    
-    for (const img of tooltip.getElementsByTagName('img')) {
-        img.remove();
+
+    for (const img of tooltip.getElementsByTagName("img")) {
+      img.remove();
     }
   }
 };
 
-for (const element of document.getElementsByClassName("img-citations")) {
-  for (const li of element.getElementsByTagName("li")) {
-    li.addEventListener("mouseenter", _handlePreload);
+if (window.matchMedia("(pointer: fine)").matches) {
+  for (const element of document.getElementsByClassName("img-citations")) {
+    for (const li of element.getElementsByTagName("li")) {
+      li.addEventListener("mouseenter", _handlePreload);
 
-    for (const a of li.querySelectorAll('[class^="preload-listener-"]')) {
-      a.addEventListener("mouseenter", _handlePreload);
+      for (const a of li.querySelectorAll('[class^="preload-listener-"]')) {
+        a.addEventListener("mouseenter", _handlePreload);
+      }
     }
-  }
 
-  for (const a of element.getElementsByTagName("a")) {
-    a.addEventListener("mouseenter", _handleShowPreview);
-    a.addEventListener("mouseleave", _handleHidePreview);
+    for (const a of element.getElementsByTagName("a")) {
+      a.addEventListener("mouseenter", _handleShowPreview);
+      a.addEventListener("mouseleave", _handleHidePreview);
+    }
   }
 }

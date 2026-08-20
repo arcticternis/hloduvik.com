@@ -42,18 +42,21 @@ ol.img-citations {
   a > [role="tooltip"] {
     position: absolute;
     height: 200px;
-    width: 400px;
+    width: max-content;
+    max-width: calc(100vw - 8rem);
     background: #ebebeb;
     border: 1px dashed #b0b0b0;
     z-index: 99;
     top: 1.5rem;
     padding: 0.5rem;
 
+    @media screen and (max-width: 768px) {
+      max-width: calc(100vw - 2rem);
+    }
+
     img {
       height: 100%;
       width: 100%;
-      object-fit: cover;
-      object-position: center;
     }
 
     &[aria-expanded="false"] {
