@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hlöðuvík.com</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        max-width: 80ch;
+        padding: 4rem;
+        padding-top: 0;
+        margin: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 1rem;
+          padding-top: 0;
+        }
+      }
+
+      body article {
+        border: 1px dashed #ddd;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #535353;
+      }
+
+      body article:first-child {
+        margin-top: 0;
+      }
+
+      body article:last-child {
+        margin-bottom: 0;
+      }
+
+      body article p:first-child {
+        margin-top: 0;
+      }
+
+      body article time {
+        font-size: 0.75rem;
+      }
+
+      body > footer {
+        border-top: 1px dashed #ddd;
+        margin-top: 1rem;
+        padding-top: 1rem;
+      }
+
+      body > footer p {
+        color: #666666;
+        margin: 0;
+        font-size: 0.65rem;
+      }
+
+      h1 {
+        font-size: 1.15rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      body > header {
+        position: relative;
+        z-index: 20;
+        background-image: url("./20130621_191621.jpg");
+        background-position: 50% 40%;
+        background-size: cover;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        padding-top: 4rem;
+      }
+
+      body > header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.25),
+          rgba(255, 255, 255, 0.85)
+        );
+      }
+
+      body > header h1 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hlöðuvík.com</h1>
+    </header>
+
+    <article>
+      <p>
+        Hlöðuvíkurvefurinn er í vinnslu! Nú er .com lénið skráð, enn á eftir að
+        hefja umræðu um notkun .is lénsins, og ég hef byrjað að taka aðeins
+        saman söguna og fleira efni sem ég vil koma á vefinn.
+      </p>
+
+      <p>
+        Enn á eftir að ákveða snið á vefnum og sömuleiðis koma honum í
+        vefumsjónarkerfi. Mér hugnaðist að nota
+        <a href="https://pagescms.org/" target="_blank">Pages CMS</a>, en þá
+        þarf vefurinn að byggjast á Markdown með einhverju forrriti eins og
+        Hugo. Finnum út úr því.
+      </p>
+
+      <p>
+        Bendi á
+        <a href="https://is.wikipedia.org/wiki/Hlöðuvík"
+          >Hlöðuvíkursíðuna á Íslensku Wikipedia</a
+        >
+        fyrir þá sem hafa slasast inn á þennan ókláraða vef í upplýsingaleit. Ég
+        hef verið að fiffa þessa síðu aðeins til og mun halda því áfram.
+      </p>
+
+      <footer>
+        <time datetime="2026-08-20 13:00">20 ágúst 2026</time>
+      </footer>
+    </article>
+
+    <footer>
+      <p>
+        &copy; 2026 Kría Elínarbur &mdash; Vefurinn er hýstur hjá
+        <a href="https://arctictern.is/" target="_blank">Arctic Tern</a> &mdash;
+        Hafið samband í síma <a href="tel:+3548650285">865-0285</a> eða
+        tölvupósti <a href="mailto:kria@elinarbur.is">kria@elinarbur.is</a>.
+      </p>
+    </footer>
+  </body>
+</html>
