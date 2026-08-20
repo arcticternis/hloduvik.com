@@ -1,4 +1,4 @@
-# Hlöðuvík.com
+# [Hlöðuvík.com](https://hloduvik.com/)
 
 Þetta er Git hirslan (e. repository) fyrir grunninn að Hlöðuvíkursíðunni.
 
