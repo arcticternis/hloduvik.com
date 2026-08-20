@@ -74,9 +74,15 @@ body > header {
   background-position: 50% 40%;
   background-size: cover;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
   padding: 1rem;
   padding-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  body > header {
+    margin-top: 1rem;
+  }
 }
 
 body > header::before {
