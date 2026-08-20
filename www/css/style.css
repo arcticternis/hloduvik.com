@@ -1,3 +1,7 @@
+:root {
+  --base-font-size: 0.75rem;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 80ch;
@@ -29,12 +33,13 @@ body article:last-child {
   margin-bottom: 0;
 }
 
-body article p:first-child {
+body article :first-child,
+body section :first-child {
   margin-top: 0;
 }
 
 body article time {
-  font-size: 0.75rem;
+  font-size: var(--base-font-size);
 }
 
 body > section {
@@ -53,14 +58,19 @@ body > footer p {
   color: #666666;
   margin: 0;
   font-size: 0.65rem;
+  line-height: 1.15rem;
 }
 
 h1 {
   font-size: 1.15rem;
 }
 
-p {
-  font-size: 0.75rem;
+h2 {
+  font-size: 1rem;
+}
+
+p, ul, ol {
+  font-size: var(--base-font-size);
 }
 
 a {
@@ -99,4 +109,8 @@ body > header::before {
 
 body > header h1 {
   margin: 0;
+}
+
+body > header > a {
+  text-decoration: none;
 }

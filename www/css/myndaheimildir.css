@@ -1,0 +1,67 @@
+ol.img-citations {
+  cite {
+    font-size: var(--base-font-size);
+  }
+
+  small {
+    font-size: var(--base-font-size);
+  }
+
+  li {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  li:first-child {
+    margin-top: 0;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  div.preload-listener-before {
+    position: absolute;
+    height: 0.5rem;
+    width: 100%;
+    top: -0.5rem;
+  }
+
+  div.preload-listener-after {
+    position: absolute;
+    height: 0.5rem;
+    width: 100%;
+    bottom: -0.5rem;
+  }
+
+  a {
+    position: relative;
+  }
+
+  a > [role="tooltip"] {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background: #ebebeb;
+    border: 1px dashed #b0b0b0;
+    z-index: 99;
+    top: 1.5rem;
+    padding: 0.5rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &[aria-expanded="false"] {
+      display: none;
+    }
+
+    &[aria-expanded="true"] {
+      display: block;
+    }
+  }
+}
